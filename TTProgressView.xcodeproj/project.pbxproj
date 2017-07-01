@@ -12,6 +12,9 @@
 		009B58C91F073EFB00A76AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B58C71F073EFB00A76AA6 /* Main.storyboard */; };
 		009B58CB1F073EFB00A76AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B58CA1F073EFB00A76AA6 /* Assets.xcassets */; };
 		009B58CE1F073EFB00A76AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B58CC1F073EFB00A76AA6 /* LaunchScreen.storyboard */; };
+		009B58D61F073F2700A76AA6 /* TTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58D51F073F2700A76AA6 /* TTProgressView.swift */; };
+		009B58D91F073F9500A76AA6 /* TTCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58D81F073F9500A76AA6 /* TTCircularProgressView.swift */; };
+		009B58DB1F073FBB00A76AA6 /* TTLinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58DA1F073FBB00A76AA6 /* TTLinearProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		009B58CA1F073EFB00A76AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009B58CD1F073EFB00A76AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		009B58CF1F073EFB00A76AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		009B58D51F073F2700A76AA6 /* TTProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTProgressView.swift; sourceTree = "<group>"; };
+		009B58D81F073F9500A76AA6 /* TTCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCircularProgressView.swift; sourceTree = "<group>"; };
+		009B58DA1F073FBB00A76AA6 /* TTLinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTLinearProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,23 @@
 			children = (
 				009B58C31F073EFB00A76AA6 /* AppDelegate.swift */,
 				009B58C51F073EFB00A76AA6 /* ViewController.swift */,
+				009B58D71F073F6100A76AA6 /* TTProgress */,
 				009B58C71F073EFB00A76AA6 /* Main.storyboard */,
 				009B58CA1F073EFB00A76AA6 /* Assets.xcassets */,
 				009B58CC1F073EFB00A76AA6 /* LaunchScreen.storyboard */,
 				009B58CF1F073EFB00A76AA6 /* Info.plist */,
 			);
 			path = TTProgressView;
+			sourceTree = "<group>";
+		};
+		009B58D71F073F6100A76AA6 /* TTProgress */ = {
+			isa = PBXGroup;
+			children = (
+				009B58D51F073F2700A76AA6 /* TTProgressView.swift */,
+				009B58DA1F073FBB00A76AA6 /* TTLinearProgressView.swift */,
+				009B58D81F073F9500A76AA6 /* TTCircularProgressView.swift */,
+			);
+			name = TTProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009B58D91F073F9500A76AA6 /* TTCircularProgressView.swift in Sources */,
 				009B58C61F073EFB00A76AA6 /* ViewController.swift in Sources */,
+				009B58D61F073F2700A76AA6 /* TTProgressView.swift in Sources */,
+				009B58DB1F073FBB00A76AA6 /* TTLinearProgressView.swift in Sources */,
 				009B58C41F073EFB00A76AA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4PK8BH6D6G;
 				INFOPLIST_FILE = TTProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalmunc.TTProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4PK8BH6D6G;
 				INFOPLIST_FILE = TTProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalmunc.TTProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

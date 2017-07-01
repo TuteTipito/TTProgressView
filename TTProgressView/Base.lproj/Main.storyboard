@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TTProgressView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +20,136 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLi-ZJ-HMd" customClass="TTLinearProgressView" customModule="TTProgressView" customModuleProvider="target">
+                                <rect key="frame" x="112" y="45" width="150" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rnK-n7-LGB"/>
+                                    <constraint firstAttribute="width" constant="150" id="zY5-dU-11Z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pathColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundPathColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J41-x2-Ekg" customClass="TTCircularProgressView" customModule="TTProgressView" customModuleProvider="target">
+                                <rect key="frame" x="112" y="135" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="A5A-xs-eVA"/>
+                                    <constraint firstAttribute="width" constant="150" id="b4x-br-0Wu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pathColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundPathColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23H-i8-XxF">
+                                <rect key="frame" x="230" y="534" width="40" height="30"/>
+                                <state key="normal" title="+80%"/>
+                                <connections>
+                                    <action selector="butonSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2OY-da-k5X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKK-iS-giZ">
+                                <rect key="frame" x="105" y="534" width="37" height="30"/>
+                                <state key="normal" title="+15%"/>
+                                <connections>
+                                    <action selector="butonFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5c-w1-vw8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5n-dd-dQ2">
+                                <rect key="frame" x="168" y="534" width="37" height="30"/>
+                                <state key="normal" title="-50%"/>
+                                <connections>
+                                    <action selector="butonFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="io5-k1-e1V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ag-lN-YRT">
+                                <rect key="frame" x="104" y="481" width="39" height="30"/>
+                                <state key="normal" title="+25%"/>
+                                <connections>
+                                    <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4CX-Wn-Z3R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va8-hp-cRb">
+                                <rect key="frame" x="230" y="481" width="40" height="30"/>
+                                <state key="normal" title="+50%"/>
+                                <connections>
+                                    <action selector="buttonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hV-Tq-f6W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSR-7d-aCZ">
+                                <rect key="frame" x="168" y="481" width="37" height="30"/>
+                                <state key="normal" title="-25%"/>
+                                <connections>
+                                    <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kD-7s-XGl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5D4-I3-Yn1">
+                                <rect key="frame" x="170" y="428" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9m-lS-4Qa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXN-PJ-EjH">
+                                <rect key="frame" x="172" y="587" width="31" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pze-1R-3Wh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GSR-7d-aCZ" firstAttribute="leading" secondItem="2Ag-lN-YRT" secondAttribute="trailing" constant="25" id="5jY-66-fsC"/>
+                            <constraint firstItem="GSR-7d-aCZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="66U-cd-DFI"/>
+                            <constraint firstItem="GSR-7d-aCZ" firstAttribute="centerY" secondItem="2Ag-lN-YRT" secondAttribute="centerY" id="8G4-4F-mZp"/>
+                            <constraint firstItem="Va8-hp-cRb" firstAttribute="centerY" secondItem="GSR-7d-aCZ" secondAttribute="centerY" id="9gR-A7-5yu"/>
+                            <constraint firstItem="x5n-dd-dQ2" firstAttribute="centerY" secondItem="23H-i8-XxF" secondAttribute="centerY" id="BKn-Ig-YJB"/>
+                            <constraint firstItem="ZXN-PJ-EjH" firstAttribute="top" secondItem="x5n-dd-dQ2" secondAttribute="bottom" constant="23" id="FGn-Nb-0TI"/>
+                            <constraint firstItem="MLi-ZJ-HMd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="K4w-7z-E2G"/>
+                            <constraint firstItem="GSR-7d-aCZ" firstAttribute="top" secondItem="5D4-I3-Yn1" secondAttribute="bottom" constant="23" id="KRw-v5-Z37"/>
+                            <constraint firstItem="MLi-ZJ-HMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SLm-Cp-Feo"/>
+                            <constraint firstItem="J41-x2-Ekg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TWZ-ta-wpo"/>
+                            <constraint firstItem="Va8-hp-cRb" firstAttribute="leading" secondItem="GSR-7d-aCZ" secondAttribute="trailing" constant="25" id="Tgl-7u-ibr"/>
+                            <constraint firstItem="5D4-I3-Yn1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="VCG-hh-bP7"/>
+                            <constraint firstItem="ZXN-PJ-EjH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YE6-9b-xO4"/>
+                            <constraint firstItem="x5n-dd-dQ2" firstAttribute="leading" secondItem="vKK-iS-giZ" secondAttribute="trailing" constant="26.5" id="fXU-e3-SEu"/>
+                            <constraint firstItem="23H-i8-XxF" firstAttribute="leading" secondItem="x5n-dd-dQ2" secondAttribute="trailing" constant="25" id="iH4-Pd-1sA"/>
+                            <constraint firstItem="x5n-dd-dQ2" firstAttribute="top" secondItem="GSR-7d-aCZ" secondAttribute="bottom" constant="23" id="iqm-Le-Ft9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZXN-PJ-EjH" secondAttribute="bottom" constant="50" id="jSx-dn-aLh"/>
+                            <constraint firstItem="vKK-iS-giZ" firstAttribute="centerY" secondItem="x5n-dd-dQ2" secondAttribute="centerY" id="kMW-ek-ouZ"/>
+                            <constraint firstItem="J41-x2-Ekg" firstAttribute="top" secondItem="MLi-ZJ-HMd" secondAttribute="bottom" constant="40" id="lSn-Jc-mBg"/>
+                            <constraint firstItem="x5n-dd-dQ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="m68-K2-lr0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="circularProgress" destination="J41-x2-Ekg" id="9O8-3r-Pyo"/>
+                        <outlet property="linearProgress" destination="MLi-ZJ-HMd" id="blP-0z-LuK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
