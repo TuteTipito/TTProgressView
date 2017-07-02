@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.author       = { "" => "" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/TuteTipito/TTProgressView.git", :tag => "#{s.version}" }
-  s.source_files  = "TTProgressView/TTProgressVIew/**/*.{h,m,swift}"
+  s.source_files  = "TTProgressVIew/**/*.{h,m,swift}"
 end
