@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006259391F08749500D0F0E9 /* TTCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259361F08749500D0F0E9 /* TTCircularProgressView.swift */; };
+		0062593A1F08749500D0F0E9 /* TTLinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259371F08749500D0F0E9 /* TTLinearProgressView.swift */; };
+		0062593B1F08749500D0F0E9 /* TTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259381F08749500D0F0E9 /* TTProgressView.swift */; };
 		009B58C41F073EFB00A76AA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58C31F073EFB00A76AA6 /* AppDelegate.swift */; };
 		009B58C61F073EFB00A76AA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58C51F073EFB00A76AA6 /* ViewController.swift */; };
 		009B58C91F073EFB00A76AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B58C71F073EFB00A76AA6 /* Main.storyboard */; };
 		009B58CB1F073EFB00A76AA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009B58CA1F073EFB00A76AA6 /* Assets.xcassets */; };
 		009B58CE1F073EFB00A76AA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B58CC1F073EFB00A76AA6 /* LaunchScreen.storyboard */; };
-		009B58D61F073F2700A76AA6 /* TTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58D51F073F2700A76AA6 /* TTProgressView.swift */; };
-		009B58D91F073F9500A76AA6 /* TTCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58D81F073F9500A76AA6 /* TTCircularProgressView.swift */; };
-		009B58DB1F073FBB00A76AA6 /* TTLinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58DA1F073FBB00A76AA6 /* TTLinearProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006259361F08749500D0F0E9 /* TTCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTCircularProgressView.swift; path = TTProgressView/TTCircularProgressView.swift; sourceTree = "<group>"; };
+		006259371F08749500D0F0E9 /* TTLinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTLinearProgressView.swift; path = TTProgressView/TTLinearProgressView.swift; sourceTree = "<group>"; };
+		006259381F08749500D0F0E9 /* TTProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTProgressView.swift; path = TTProgressView/TTProgressView.swift; sourceTree = "<group>"; };
 		009B58C01F073EFB00A76AA6 /* TTProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B58C31F073EFB00A76AA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009B58C51F073EFB00A76AA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,9 +28,6 @@
 		009B58CA1F073EFB00A76AA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009B58CD1F073EFB00A76AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		009B58CF1F073EFB00A76AA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		009B58D51F073F2700A76AA6 /* TTProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTProgressView.swift; sourceTree = "<group>"; };
-		009B58D81F073F9500A76AA6 /* TTCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCircularProgressView.swift; sourceTree = "<group>"; };
-		009B58DA1F073FBB00A76AA6 /* TTLinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTLinearProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006259351F08748300D0F0E9 /* TTProgressVIew */ = {
+			isa = PBXGroup;
+			children = (
+				006259361F08749500D0F0E9 /* TTCircularProgressView.swift */,
+				006259371F08749500D0F0E9 /* TTLinearProgressView.swift */,
+				006259381F08749500D0F0E9 /* TTProgressView.swift */,
+			);
+			name = TTProgressVIew;
+			sourceTree = "<group>";
+		};
 		009B58B71F073EFB00A76AA6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,23 +72,13 @@
 			children = (
 				009B58C31F073EFB00A76AA6 /* AppDelegate.swift */,
 				009B58C51F073EFB00A76AA6 /* ViewController.swift */,
-				009B58D71F073F6100A76AA6 /* TTProgress */,
+				006259351F08748300D0F0E9 /* TTProgressVIew */,
 				009B58C71F073EFB00A76AA6 /* Main.storyboard */,
 				009B58CA1F073EFB00A76AA6 /* Assets.xcassets */,
 				009B58CC1F073EFB00A76AA6 /* LaunchScreen.storyboard */,
 				009B58CF1F073EFB00A76AA6 /* Info.plist */,
 			);
 			path = TTProgressView;
-			sourceTree = "<group>";
-		};
-		009B58D71F073F6100A76AA6 /* TTProgress */ = {
-			isa = PBXGroup;
-			children = (
-				009B58D51F073F2700A76AA6 /* TTProgressView.swift */,
-				009B58DA1F073FBB00A76AA6 /* TTLinearProgressView.swift */,
-				009B58D81F073F9500A76AA6 /* TTCircularProgressView.swift */,
-			);
-			name = TTProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				009B58D91F073F9500A76AA6 /* TTCircularProgressView.swift in Sources */,
+				0062593A1F08749500D0F0E9 /* TTLinearProgressView.swift in Sources */,
+				006259391F08749500D0F0E9 /* TTCircularProgressView.swift in Sources */,
 				009B58C61F073EFB00A76AA6 /* ViewController.swift in Sources */,
-				009B58D61F073F2700A76AA6 /* TTProgressView.swift in Sources */,
-				009B58DB1F073FBB00A76AA6 /* TTLinearProgressView.swift in Sources */,
+				0062593B1F08749500D0F0E9 /* TTProgressView.swift in Sources */,
 				009B58C41F073EFB00A76AA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +324,7 @@
 				009B58D41F073EFB00A76AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
