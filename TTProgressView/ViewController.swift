@@ -24,33 +24,44 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    // MARK : - Actions
     
-    @IBAction func buttonOne(_ sender: Any) {
-        circularProgress.set(progress: 0.25)
-        linearProgress.set(progress: 0.25)
+    @IBAction func minusFifteen(_ sender: Any) {
+        circularProgress.set(progress: -0.15)
+        linearProgress.set(progress: -0.15)
     }
     
-    @IBAction func buttonTwo(_ sender: Any) {
+    @IBAction func minusTwentyfive(_ sender: Any) {
         circularProgress.set(progress: -0.25)
         linearProgress.set(progress: -0.25)
     }
     
-    @IBAction func buttonThree(_ sender: Any) {
-        circularProgress.set(progress: 0.50)
-        linearProgress.set(progress: 0.50)
-    }
-    
-    @IBAction func butonFour(_ sender: Any) {
-        circularProgress.set(progress: 0.15)
-        linearProgress.set(progress: 0.15)
-    }
-    
-    @IBAction func butonFive(_ sender: Any) {
+    @IBAction func minusFifty(_ sender: Any) {
         circularProgress.set(progress: -0.50)
         linearProgress.set(progress: -0.50)
     }
     
-    @IBAction func butonSix(_ sender: Any) {
+    @IBAction func minusEighty(_ sender: Any) {
+        circularProgress.set(progress: -0.80)
+        linearProgress.set(progress: -0.80)
+    }
+    
+    @IBAction func plusFifteen(_ sender: Any) {
+        circularProgress.set(progress: 0.15)
+        linearProgress.set(progress: 0.15)
+    }
+    
+    @IBAction func plusTwentyFive(_ sender: Any) {
+        circularProgress.set(progress: 0.25)
+        linearProgress.set(progress: 0.25)
+    }
+    
+    @IBAction func plusFifty(_ sender: Any) {
+        circularProgress.set(progress: 0.50)
+        linearProgress.set(progress: 0.50)
+    }
+    
+    @IBAction func plusEighty(_ sender: Any) {
         circularProgress.set(progress: 0.80)
         linearProgress.set(progress: 0.80)
     }

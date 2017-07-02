@@ -10,6 +10,7 @@
 		006259391F08749500D0F0E9 /* TTCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259361F08749500D0F0E9 /* TTCircularProgressView.swift */; };
 		0062593A1F08749500D0F0E9 /* TTLinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259371F08749500D0F0E9 /* TTLinearProgressView.swift */; };
 		0062593B1F08749500D0F0E9 /* TTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259381F08749500D0F0E9 /* TTProgressView.swift */; };
+		0062593D1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0062593C1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift */; };
 		009B58C41F073EFB00A76AA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58C31F073EFB00A76AA6 /* AppDelegate.swift */; };
 		009B58C61F073EFB00A76AA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58C51F073EFB00A76AA6 /* ViewController.swift */; };
 		009B58C91F073EFB00A76AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B58C71F073EFB00A76AA6 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		006259361F08749500D0F0E9 /* TTCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTCircularProgressView.swift; path = TTProgressView/TTCircularProgressView.swift; sourceTree = "<group>"; };
 		006259371F08749500D0F0E9 /* TTLinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTLinearProgressView.swift; path = TTProgressView/TTLinearProgressView.swift; sourceTree = "<group>"; };
 		006259381F08749500D0F0E9 /* TTProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTProgressView.swift; path = TTProgressView/TTProgressView.swift; sourceTree = "<group>"; };
+		0062593C1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCircularProgressViewWithLabel.swift; sourceTree = "<group>"; };
 		009B58C01F073EFB00A76AA6 /* TTProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B58C31F073EFB00A76AA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009B58C51F073EFB00A76AA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,9 +46,10 @@
 		006259351F08748300D0F0E9 /* TTProgressVIew */ = {
 			isa = PBXGroup;
 			children = (
-				006259361F08749500D0F0E9 /* TTCircularProgressView.swift */,
-				006259371F08749500D0F0E9 /* TTLinearProgressView.swift */,
 				006259381F08749500D0F0E9 /* TTProgressView.swift */,
+				006259371F08749500D0F0E9 /* TTLinearProgressView.swift */,
+				006259361F08749500D0F0E9 /* TTCircularProgressView.swift */,
+				0062593C1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift */,
 			);
 			name = TTProgressVIew;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				0062593A1F08749500D0F0E9 /* TTLinearProgressView.swift in Sources */,
 				006259391F08749500D0F0E9 /* TTCircularProgressView.swift in Sources */,
 				009B58C61F073EFB00A76AA6 /* ViewController.swift in Sources */,
+				0062593D1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift in Sources */,
 				0062593B1F08749500D0F0E9 /* TTProgressView.swift in Sources */,
 				009B58C41F073EFB00A76AA6 /* AppDelegate.swift in Sources */,
 			);
