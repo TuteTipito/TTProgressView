@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TTProgressView.xcodeproj">
+      location = "self:/Users/matiasspinelli/Proyects/TTProgressView/TTProgress Example.xcodeproj">
    </FileRef>
 </Workspace>

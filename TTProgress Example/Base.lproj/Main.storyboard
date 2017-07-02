@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLi-ZJ-HMd" customClass="TTLinearProgressView" customModule="TTProgressView" customModuleProvider="target">
-                                <rect key="frame" x="112" y="45" width="150" height="50"/>
+                                <rect key="frame" x="85" y="45" width="150" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rnK-n7-LGB"/>
@@ -43,7 +43,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J41-x2-Ekg" customClass="TTCircularProgressViewWithLabel" customModule="TTProgressView" customModuleProvider="target">
-                                <rect key="frame" x="112" y="135" width="150" height="150"/>
+                                <rect key="frame" x="85" y="135" width="150" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="A5A-xs-eVA"/>
@@ -64,14 +64,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JeI-Dk-yqy">
-                                <rect key="frame" x="0.0" y="443" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeI-Dk-yqy">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="M3N-gN-wbi"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="oLx-RB-egU"/>
                                     <barButtonItem style="plain" id="k0p-V7-siE">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5D4-I3-Yn1">
-                                            <rect key="frame" x="106" y="7" width="32" height="30"/>
+                                            <rect key="frame" x="88" y="7" width="32" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="start"/>
                                             <connections>
@@ -82,7 +84,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="HL6-uY-I5V"/>
                                     <barButtonItem style="plain" id="BN3-39-jXD">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZXN-PJ-EjH">
-                                            <rect key="frame" x="238" y="7" width="31" height="30"/>
+                                            <rect key="frame" x="201" y="7" width="31" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="stop"/>
                                             <connections>
@@ -93,14 +95,16 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Mfs-Xj-z3p"/>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjp-2S-ajZ">
-                                <rect key="frame" x="0.0" y="487" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjp-2S-ajZ">
+                                <rect key="frame" x="0.0" y="480" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8ne-Ij-UL3"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="z47-aH-G1k"/>
                                     <barButtonItem style="plain" id="FEe-DJ-VbQ">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5IC-p0-nDf">
-                                            <rect key="frame" x="49" y="7" width="37" height="30"/>
+                                            <rect key="frame" x="38" y="7" width="37" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="-15%"/>
                                             <connections>
@@ -111,7 +115,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4NH-HS-FD1"/>
                                     <barButtonItem style="plain" id="Hxg-6H-QTx">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GSR-7d-aCZ">
-                                            <rect key="frame" x="129" y="7" width="37" height="30"/>
+                                            <rect key="frame" x="107" y="7" width="37" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="-25%"/>
                                             <connections>
@@ -122,7 +126,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="S0u-Pj-FqM"/>
                                     <barButtonItem style="plain" id="ogQ-fB-D5h">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x5n-dd-dQ2">
-                                            <rect key="frame" x="209" y="7" width="37" height="30"/>
+                                            <rect key="frame" x="176" y="7" width="37" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="-50%"/>
                                             <connections>
@@ -133,7 +137,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="vcl-Hv-rbu"/>
                                     <barButtonItem style="plain" id="prW-sF-MRv">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V4e-2T-mTP">
-                                            <rect key="frame" x="289" y="7" width="37" height="30"/>
+                                            <rect key="frame" x="245" y="7" width="37" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="-80%"/>
                                             <connections>
@@ -144,14 +148,16 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Fik-2A-fEo"/>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tK-kY-aHF">
-                                <rect key="frame" x="0.0" y="531" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tK-kY-aHF">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="y7O-5j-J7V"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="CbU-9Z-4uJ"/>
                                     <barButtonItem style="plain" id="GM8-8c-inb">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vKK-iS-giZ">
-                                            <rect key="frame" x="47" y="7" width="37" height="30"/>
+                                            <rect key="frame" x="36" y="7" width="37" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="+15%"/>
                                             <connections>
@@ -162,7 +168,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yEV-0Q-atG"/>
                                     <barButtonItem style="plain" id="BuS-IU-V8D">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Ag-lN-YRT">
-                                            <rect key="frame" x="126" y="7" width="39" height="30"/>
+                                            <rect key="frame" x="104" y="7" width="39" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="+25%"/>
                                             <connections>
@@ -173,7 +179,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="MtR-5G-VI1"/>
                                     <barButtonItem style="plain" id="Jgp-lD-raK">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Va8-hp-cRb">
-                                            <rect key="frame" x="206" y="7" width="40" height="30"/>
+                                            <rect key="frame" x="173" y="7" width="40" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="+50%"/>
                                             <connections>
@@ -184,7 +190,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="OZ7-jH-jMT"/>
                                     <barButtonItem style="plain" id="ORK-Hs-UBS">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23H-i8-XxF">
-                                            <rect key="frame" x="288" y="7" width="40" height="30"/>
+                                            <rect key="frame" x="244" y="7" width="40" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="+80%"/>
                                             <connections>
@@ -198,10 +204,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bjp-2S-ajZ" firstAttribute="top" secondItem="JeI-Dk-yqy" secondAttribute="bottom" id="4It-4a-3Av"/>
+                            <constraint firstItem="7tK-kY-aHF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Us-6t-e1T"/>
+                            <constraint firstItem="JeI-Dk-yqy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6ZN-F9-NkF"/>
                             <constraint firstItem="MLi-ZJ-HMd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="K4w-7z-E2G"/>
+                            <constraint firstAttribute="trailing" secondItem="JeI-Dk-yqy" secondAttribute="trailing" id="Lx1-OZ-KAG"/>
+                            <constraint firstItem="bjp-2S-ajZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RNg-5d-1Ey"/>
                             <constraint firstItem="MLi-ZJ-HMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SLm-Cp-Feo"/>
+                            <constraint firstItem="7tK-kY-aHF" firstAttribute="top" secondItem="bjp-2S-ajZ" secondAttribute="bottom" id="T2B-cY-LJ5"/>
                             <constraint firstItem="J41-x2-Ekg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TWZ-ta-wpo"/>
+                            <constraint firstAttribute="trailing" secondItem="bjp-2S-ajZ" secondAttribute="trailing" id="ca0-We-BrA"/>
                             <constraint firstItem="J41-x2-Ekg" firstAttribute="top" secondItem="MLi-ZJ-HMd" secondAttribute="bottom" constant="40" id="lSn-Jc-mBg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7tK-kY-aHF" secondAttribute="bottom" id="ufq-fr-WD5"/>
+                            <constraint firstAttribute="trailing" secondItem="7tK-kY-aHF" secondAttribute="trailing" id="ugy-kp-4E4"/>
                         </constraints>
                     </view>
                     <connections>

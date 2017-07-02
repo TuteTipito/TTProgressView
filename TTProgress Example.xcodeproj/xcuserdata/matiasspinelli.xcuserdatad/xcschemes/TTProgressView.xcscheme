@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "009B58BF1F073EFB00A76AA6"
-               BuildableName = "TTProgressView.app"
-               BlueprintName = "TTProgressView"
-               ReferencedContainer = "container:TTProgressView.xcodeproj">
+               BuildableName = "TTProgress Example.app"
+               BlueprintName = "TTProgress Example"
+               ReferencedContainer = "container:TTProgress Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "009B58BF1F073EFB00A76AA6"
-            BuildableName = "TTProgressView.app"
-            BlueprintName = "TTProgressView"
-            ReferencedContainer = "container:TTProgressView.xcodeproj">
+            BuildableName = "TTProgress Example.app"
+            BlueprintName = "TTProgress Example"
+            ReferencedContainer = "container:TTProgress Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "009B58BF1F073EFB00A76AA6"
-            BuildableName = "TTProgressView.app"
-            BlueprintName = "TTProgressView"
-            ReferencedContainer = "container:TTProgressView.xcodeproj">
+            BuildableName = "TTProgress Example.app"
+            BlueprintName = "TTProgress Example"
+            ReferencedContainer = "container:TTProgress Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "009B58BF1F073EFB00A76AA6"
-            BuildableName = "TTProgressView.app"
-            BlueprintName = "TTProgressView"
-            ReferencedContainer = "container:TTProgressView.xcodeproj">
+            BuildableName = "TTProgress Example.app"
+            BlueprintName = "TTProgress Example"
+            ReferencedContainer = "container:TTProgress Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TTProgressView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "TTProgressView."
   s.description  = "a ProgressView created by TT"
   s.homepage     = "https://github.com/TuteTipito/TTProgressView.git"
@@ -9,6 +9,5 @@ Pod::Spec.new do |s|
   s.author       = { "" => "" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/TuteTipito/TTProgressView.git", :tag => "#{s.version}" }
-  s.source_files  = "TTProgressView/TTProgressView", "TTProgressView/**/*.{h,m,swift}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "TTProgressView/TTProgressVIew/**/*.{h,m,swift}"
 end

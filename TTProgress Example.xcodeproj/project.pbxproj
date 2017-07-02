@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		006259391F08749500D0F0E9 /* TTCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259361F08749500D0F0E9 /* TTCircularProgressView.swift */; };
-		0062593A1F08749500D0F0E9 /* TTLinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259371F08749500D0F0E9 /* TTLinearProgressView.swift */; };
-		0062593B1F08749500D0F0E9 /* TTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259381F08749500D0F0E9 /* TTProgressView.swift */; };
-		0062593D1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0062593C1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift */; };
+		0062594C1F0969C300D0F0E9 /* TTCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259481F0969C300D0F0E9 /* TTCircularProgressView.swift */; };
+		0062594D1F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259491F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift */; };
+		0062594E1F0969C300D0F0E9 /* TTLinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0062594A1F0969C300D0F0E9 /* TTLinearProgressView.swift */; };
+		0062594F1F0969C300D0F0E9 /* TTProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0062594B1F0969C300D0F0E9 /* TTProgressView.swift */; };
 		009B58C41F073EFB00A76AA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58C31F073EFB00A76AA6 /* AppDelegate.swift */; };
 		009B58C61F073EFB00A76AA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B58C51F073EFB00A76AA6 /* ViewController.swift */; };
 		009B58C91F073EFB00A76AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009B58C71F073EFB00A76AA6 /* Main.storyboard */; };
@@ -19,11 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		006259361F08749500D0F0E9 /* TTCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTCircularProgressView.swift; path = TTProgressView/TTCircularProgressView.swift; sourceTree = "<group>"; };
-		006259371F08749500D0F0E9 /* TTLinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTLinearProgressView.swift; path = TTProgressView/TTLinearProgressView.swift; sourceTree = "<group>"; };
-		006259381F08749500D0F0E9 /* TTProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTProgressView.swift; path = TTProgressView/TTProgressView.swift; sourceTree = "<group>"; };
-		0062593C1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCircularProgressViewWithLabel.swift; sourceTree = "<group>"; };
-		009B58C01F073EFB00A76AA6 /* TTProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		006259481F0969C300D0F0E9 /* TTCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCircularProgressView.swift; sourceTree = "<group>"; };
+		006259491F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCircularProgressViewWithLabel.swift; sourceTree = "<group>"; };
+		0062594A1F0969C300D0F0E9 /* TTLinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTLinearProgressView.swift; sourceTree = "<group>"; };
+		0062594B1F0969C300D0F0E9 /* TTProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTProgressView.swift; sourceTree = "<group>"; };
+		009B58C01F073EFB00A76AA6 /* TTProgress Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTProgress Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		009B58C31F073EFB00A76AA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		009B58C51F073EFB00A76AA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		009B58C81F073EFB00A76AA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,18 +46,19 @@
 		006259351F08748300D0F0E9 /* TTProgressVIew */ = {
 			isa = PBXGroup;
 			children = (
-				006259381F08749500D0F0E9 /* TTProgressView.swift */,
-				006259371F08749500D0F0E9 /* TTLinearProgressView.swift */,
-				006259361F08749500D0F0E9 /* TTCircularProgressView.swift */,
-				0062593C1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift */,
+				006259481F0969C300D0F0E9 /* TTCircularProgressView.swift */,
+				006259491F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift */,
+				0062594A1F0969C300D0F0E9 /* TTLinearProgressView.swift */,
+				0062594B1F0969C300D0F0E9 /* TTProgressView.swift */,
 			);
 			name = TTProgressVIew;
+			path = ../TTProgressView;
 			sourceTree = "<group>";
 		};
 		009B58B71F073EFB00A76AA6 = {
 			isa = PBXGroup;
 			children = (
-				009B58C21F073EFB00A76AA6 /* TTProgressView */,
+				009B58C21F073EFB00A76AA6 /* TTProgress Example */,
 				009B58C11F073EFB00A76AA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,12 +66,12 @@
 		009B58C11F073EFB00A76AA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				009B58C01F073EFB00A76AA6 /* TTProgressView.app */,
+				009B58C01F073EFB00A76AA6 /* TTProgress Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		009B58C21F073EFB00A76AA6 /* TTProgressView */ = {
+		009B58C21F073EFB00A76AA6 /* TTProgress Example */ = {
 			isa = PBXGroup;
 			children = (
 				009B58C31F073EFB00A76AA6 /* AppDelegate.swift */,
@@ -81,15 +82,15 @@
 				009B58CC1F073EFB00A76AA6 /* LaunchScreen.storyboard */,
 				009B58CF1F073EFB00A76AA6 /* Info.plist */,
 			);
-			path = TTProgressView;
+			path = "TTProgress Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		009B58BF1F073EFB00A76AA6 /* TTProgressView */ = {
+		009B58BF1F073EFB00A76AA6 /* TTProgress Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 009B58D21F073EFB00A76AA6 /* Build configuration list for PBXNativeTarget "TTProgressView" */;
+			buildConfigurationList = 009B58D21F073EFB00A76AA6 /* Build configuration list for PBXNativeTarget "TTProgress Example" */;
 			buildPhases = (
 				009B58BC1F073EFB00A76AA6 /* Sources */,
 				009B58BD1F073EFB00A76AA6 /* Frameworks */,
@@ -99,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = TTProgressView;
+			name = "TTProgress Example";
 			productName = TTProgressView;
-			productReference = 009B58C01F073EFB00A76AA6 /* TTProgressView.app */;
+			productReference = 009B58C01F073EFB00A76AA6 /* TTProgress Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 009B58BB1F073EFB00A76AA6 /* Build configuration list for PBXProject "TTProgressView" */;
+			buildConfigurationList = 009B58BB1F073EFB00A76AA6 /* Build configuration list for PBXProject "TTProgress Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -134,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				009B58BF1F073EFB00A76AA6 /* TTProgressView */,
+				009B58BF1F073EFB00A76AA6 /* TTProgress Example */,
 			);
 		};
 /* End PBXProject section */
@@ -157,11 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0062593A1F08749500D0F0E9 /* TTLinearProgressView.swift in Sources */,
-				006259391F08749500D0F0E9 /* TTCircularProgressView.swift in Sources */,
+				0062594D1F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift in Sources */,
+				0062594F1F0969C300D0F0E9 /* TTProgressView.swift in Sources */,
+				0062594E1F0969C300D0F0E9 /* TTLinearProgressView.swift in Sources */,
 				009B58C61F073EFB00A76AA6 /* ViewController.swift in Sources */,
-				0062593D1F08B2E200D0F0E9 /* TTCircularProgressViewWithLabel.swift in Sources */,
-				0062593B1F08749500D0F0E9 /* TTProgressView.swift in Sources */,
+				0062594C1F0969C300D0F0E9 /* TTCircularProgressView.swift in Sources */,
 				009B58C41F073EFB00A76AA6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4PK8BH6D6G;
-				INFOPLIST_FILE = TTProgressView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TTProgress Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalmunc.TTProgressView;
@@ -300,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4PK8BH6D6G;
-				INFOPLIST_FILE = TTProgressView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TTProgress Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalmunc.TTProgressView;
@@ -312,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		009B58BB1F073EFB00A76AA6 /* Build configuration list for PBXProject "TTProgressView" */ = {
+		009B58BB1F073EFB00A76AA6 /* Build configuration list for PBXProject "TTProgress Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				009B58D01F073EFB00A76AA6 /* Debug */,
@@ -321,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		009B58D21F073EFB00A76AA6 /* Build configuration list for PBXNativeTarget "TTProgressView" */ = {
+		009B58D21F073EFB00A76AA6 /* Build configuration list for PBXNativeTarget "TTProgress Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				009B58D31F073EFB00A76AA6 /* Debug */,

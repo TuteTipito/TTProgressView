@@ -83,7 +83,7 @@ class TTProgressView: UIView {
             
             if self.progress+progress < 0.0 {
                 
-                let newProgress = 1.0+(self.progress+progress)
+                let newProgress = self.progress+progress
                 
                 progressLayer.strokeStart = 0.0
                 progressLayer.strokeEnd = 0.0
@@ -91,14 +91,8 @@ class TTProgressView: UIView {
                 progressLayer.add(strokeAnimation(animation: StrokeAnimation.end, from: CGFloat(self.progress), to: progressLayer.strokeEnd, duration: 0.5), forKey: "strokeAnimation")
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                    
-                    self.progressLayer.removeAnimation(forKey: "strokeAnimation")
-                    
-                    self.progress = newProgress
-                    
-                    self.progressLayer.strokeEnd = CGFloat(newProgress)
-                    
-                    self.progressLayer.add(self.strokeAnimation(animation: StrokeAnimation.end, from: CGFloat(self.progress-progress), to: self.progressLayer.strokeEnd, duration: 0.5), forKey: "strokeAnimation")
+                    self.progress = 1.0
+                    self.set(progress: newProgress)
                 })
                 
             } else {
@@ -123,8 +117,8 @@ class TTProgressView: UIView {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
                         self.set(progress: newProgress)
                     })
-                    
                 })
+                
             }
         }
     }
