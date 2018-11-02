@@ -14,11 +14,10 @@ class TTLinearProgressView: TTProgressView {
         super.layoutSubviews()
         
         let path : UIBezierPath = UIBezierPath()
-        path.move(to: CGPoint(x: 0, y: bounds.midY))
-        path.addLine(to: CGPoint(x: bounds.size.width, y: bounds.midY))
+        path.move(to: CGPoint(x: 0, y: bounds.maxY))
+        path.addLine(to: CGPoint(x: bounds.size.width, y: bounds.maxY))
         
         path.lineCapStyle = .round
-        
         
         progressLayer.path = path.cgPath
         

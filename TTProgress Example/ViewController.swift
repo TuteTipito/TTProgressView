@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var circularProgress: TTCircularProgressView!
+    @IBOutlet weak var circularProgress: TTCircularProgressViewWithLabel!
     @IBOutlet weak var linearProgress: TTLinearProgressView!
     
     private var timer: Timer?
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK : - Actions
+    //MARK: - Actions
     
     @IBAction func minusFifteen(_ sender: Any) {
         circularProgress.set(progress: -0.15)
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         timer = nil
     }
     
-    func increaseProgressForSecond() {
+    @objc func increaseProgressForSecond() {
         circularProgress.set(progress: 0.01)
         linearProgress.set(progress: 0.01)
     }

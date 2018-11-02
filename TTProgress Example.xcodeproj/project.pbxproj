@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000B00451F19BD96008D80B1 /* TTSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B00431F19BD96008D80B1 /* TTSplash.storyboard */; };
+		000B00461F19BD96008D80B1 /* TTSplashAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000B00441F19BD96008D80B1 /* TTSplashAssets.xcassets */; };
 		0062594C1F0969C300D0F0E9 /* TTCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259481F0969C300D0F0E9 /* TTCircularProgressView.swift */; };
 		0062594D1F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006259491F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift */; };
 		0062594E1F0969C300D0F0E9 /* TTLinearProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0062594A1F0969C300D0F0E9 /* TTLinearProgressView.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000B00431F19BD96008D80B1 /* TTSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TTSplash.storyboard; path = TTSplash/TTSplash.storyboard; sourceTree = SOURCE_ROOT; };
+		000B00441F19BD96008D80B1 /* TTSplashAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = TTSplashAssets.xcassets; path = TTSplash/TTSplashAssets.xcassets; sourceTree = SOURCE_ROOT; };
 		006259481F0969C300D0F0E9 /* TTCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCircularProgressView.swift; sourceTree = "<group>"; };
 		006259491F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCircularProgressViewWithLabel.swift; sourceTree = "<group>"; };
 		0062594A1F0969C300D0F0E9 /* TTLinearProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTLinearProgressView.swift; sourceTree = "<group>"; };
@@ -43,13 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000BFFAF1F0C6040008D80B1 /* TTSplash */ = {
+			isa = PBXGroup;
+			children = (
+				000B00431F19BD96008D80B1 /* TTSplash.storyboard */,
+				000B00441F19BD96008D80B1 /* TTSplashAssets.xcassets */,
+			);
+			name = TTSplash;
+			path = ../TTProgressView;
+			sourceTree = "<group>";
+		};
 		006259351F08748300D0F0E9 /* TTProgressVIew */ = {
 			isa = PBXGroup;
 			children = (
+				0062594B1F0969C300D0F0E9 /* TTProgressView.swift */,
+				0062594A1F0969C300D0F0E9 /* TTLinearProgressView.swift */,
 				006259481F0969C300D0F0E9 /* TTCircularProgressView.swift */,
 				006259491F0969C300D0F0E9 /* TTCircularProgressViewWithLabel.swift */,
-				0062594A1F0969C300D0F0E9 /* TTLinearProgressView.swift */,
-				0062594B1F0969C300D0F0E9 /* TTProgressView.swift */,
 			);
 			name = TTProgressVIew;
 			path = ../TTProgressView;
@@ -78,6 +92,7 @@
 				009B58C51F073EFB00A76AA6 /* ViewController.swift */,
 				006259351F08748300D0F0E9 /* TTProgressVIew */,
 				009B58C71F073EFB00A76AA6 /* Main.storyboard */,
+				000BFFAF1F0C6040008D80B1 /* TTSplash */,
 				009B58CA1F073EFB00A76AA6 /* Assets.xcassets */,
 				009B58CC1F073EFB00A76AA6 /* LaunchScreen.storyboard */,
 				009B58CF1F073EFB00A76AA6 /* Info.plist */,
@@ -112,12 +127,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Dalmunc;
 				TargetAttributes = {
 					009B58BF1F073EFB00A76AA6 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 4PK8BH6D6G;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -148,6 +164,8 @@
 				009B58CE1F073EFB00A76AA6 /* LaunchScreen.storyboard in Resources */,
 				009B58CB1F073EFB00A76AA6 /* Assets.xcassets in Resources */,
 				009B58C91F073EFB00A76AA6 /* Main.storyboard in Resources */,
+				000B00461F19BD96008D80B1 /* TTSplashAssets.xcassets in Resources */,
+				000B00451F19BD96008D80B1 /* TTSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,15 +216,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -248,15 +274,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -292,7 +326,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalmunc.TTProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -306,7 +341,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dalmunc.TTProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

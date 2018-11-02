@@ -47,7 +47,7 @@ class TTProgressView: UIView {
         layer.addSublayer(progressLayer)
     }
     
-    // MARK : - Setters
+    //MARK: - Setters
     
     func set(pathColor : UIColor) {
         self.pathColor = pathColor

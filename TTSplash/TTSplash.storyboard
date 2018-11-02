@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GAw-SW-JDp">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tuo-rk-9WT">
+            <objects>
+                <viewController id="GAw-SW-JDp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vrk-NF-bFY"/>
+                        <viewControllerLayoutGuide type="bottom" id="qh6-3D-Rxx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uBN-BX-r0w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Combat_Background_075" translatesAutoresizingMaskIntoConstraints="NO" id="Q0v-zO-3rq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TTlogo" translatesAutoresizingMaskIntoConstraints="NO" id="XLK-V5-x3q">
+                                <rect key="frame" x="285" y="533" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="ReY-tG-gFN"/>
+                                    <constraint firstAttribute="height" constant="35" id="Zus-1z-e07"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Scarlet_Witch_Portrait_Art" translatesAutoresizingMaskIntoConstraints="NO" id="S0v-GE-dBr">
+                                <rect key="frame" x="-50" y="139.5" width="370" height="478.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="S0v-GE-dBr" secondAttribute="height" multiplier="791:1024" id="g8y-2v-9C5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TTProgress" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="KH9-ja-Ykx">
+                                <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bg4-U4-bDQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by TuTe =)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObJ-UJ-qtF">
+                                <rect key="frame" x="0.0" y="552" width="63" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ObJ-UJ-qtF" firstAttribute="leading" secondItem="uBN-BX-r0w" secondAttribute="leading" id="0Jl-VS-FVs"/>
+                            <constraint firstItem="ObJ-UJ-qtF" firstAttribute="bottom" secondItem="XLK-V5-x3q" secondAttribute="bottom" id="3Pq-MB-GWk"/>
+                            <constraint firstAttribute="trailing" secondItem="Q0v-zO-3rq" secondAttribute="trailing" id="3hQ-qb-zdb"/>
+                            <constraint firstItem="Q0v-zO-3rq" firstAttribute="top" secondItem="uBN-BX-r0w" secondAttribute="top" id="Ftq-NO-OVm"/>
+                            <constraint firstItem="KH9-ja-Ykx" firstAttribute="leading" secondItem="uBN-BX-r0w" secondAttribute="leading" id="Nv1-Sy-wV4"/>
+                            <constraint firstItem="KH9-ja-Ykx" firstAttribute="top" secondItem="uBN-BX-r0w" secondAttribute="top" constant="20" id="SQ7-3j-bq8"/>
+                            <constraint firstAttribute="trailing" secondItem="S0v-GE-dBr" secondAttribute="trailing" id="Wqp-Yo-GTm"/>
+                            <constraint firstItem="qh6-3D-Rxx" firstAttribute="top" secondItem="XLK-V5-x3q" secondAttribute="bottom" id="WyX-ff-Smd"/>
+                            <constraint firstAttribute="trailing" secondItem="KH9-ja-Ykx" secondAttribute="trailing" id="gzG-J6-aS2"/>
+                            <constraint firstAttribute="trailing" secondItem="XLK-V5-x3q" secondAttribute="trailing" id="hBC-qe-qRw"/>
+                            <constraint firstItem="Q0v-zO-3rq" firstAttribute="leading" secondItem="uBN-BX-r0w" secondAttribute="leading" id="iiY-pm-iiH"/>
+                            <constraint firstItem="S0v-GE-dBr" firstAttribute="leading" secondItem="uBN-BX-r0w" secondAttribute="leading" constant="-50" id="mtS-Eo-lPY"/>
+                            <constraint firstItem="qh6-3D-Rxx" firstAttribute="top" secondItem="S0v-GE-dBr" secondAttribute="bottom" constant="-50" id="teC-MX-nqj"/>
+                            <constraint firstItem="qh6-3D-Rxx" firstAttribute="top" secondItem="Q0v-zO-3rq" secondAttribute="bottom" id="x46-Ij-IkN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1w-f4-IeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110.14492753623189" y="-16.304347826086957"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Combat_Background_075" width="760" height="630"/>
+        <image name="Scarlet_Witch_Portrait_Art" width="1497" height="1763"/>
+        <image name="TTlogo" width="140" height="140"/>
+    </resources>
+</document>
