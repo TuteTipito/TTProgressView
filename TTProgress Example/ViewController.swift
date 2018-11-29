@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var circularProgress: TTCircularProgressViewWithLabel!
     @IBOutlet weak var linearProgress: TTLinearProgressView!
     
+    @IBOutlet weak var loadingProgress: TTCircularProgressView!
+    
     private var timer: Timer?
     
     override func viewDidLoad() {
@@ -69,12 +71,16 @@ class ViewController: UIViewController {
     @IBAction func startTimer(_ sender: Any) {
         guard timer == nil else { return }
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(increaseProgressForSecond), userInfo: nil, repeats: true)
+        
+        loadingProgress.startRotation()
     }
     
     @IBAction func stopTimer(_ sender: Any) {
         guard timer != nil else { return }
         timer?.invalidate()
         timer = nil
+        
+        loadingProgress.stopRotation()
     }
     
     @objc func increaseProgressForSecond() {

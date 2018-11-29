@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = "TTProgressView"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "TTProgressView."
   s.description  = "a ProgressView created by TT"
   s.homepage     = "https://github.com/TuteTipito/TTProgressView.git"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-  s.license      = "MIT"
-  s.author       = { "" => "" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author       = { "Matias Spinelli" => "matias.spinelli@gmail.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/TuteTipito/TTProgressView.git", :tag => "#{s.version}" }
   s.source_files  = "TTProgressVIew/**/*.{h,m,swift}"
+  s.swift_version = '4.2'
 end

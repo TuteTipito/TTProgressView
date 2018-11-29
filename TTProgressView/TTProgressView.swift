@@ -65,6 +65,16 @@ class TTProgressView: UIView {
         backgroundLayer.lineWidth = lineWidth
     }
     
+    
+    func startRotation() {
+        progressLayer.add(rotate360(), forKey: "rotation")
+    }
+
+    func stopRotation() {
+        progressLayer.removeAnimation(forKey: "rotation")
+    }
+    
+    
     func set(progress : Double) {
         
         progressLayer.removeAnimation(forKey: "strokeAnimation")
@@ -131,6 +141,10 @@ extension TTProgressView {
         case end = "strokeEnd"
     }
     
+    enum TransformAnimation : String {
+        case rotation = "transform.rotation"
+    }
+    
     func strokeAnimation(animation keyPathValue: StrokeAnimation, from fromValue: CGFloat, to toValue: CGFloat, duration durationValue: Double) -> CAAnimation {
         
         let animation = CABasicAnimation(keyPath: keyPathValue.rawValue)
@@ -141,4 +155,27 @@ extension TTProgressView {
         
         return animation
     }
+
+    func rotate360() -> CAAnimation {
+        
+        let rotation : CABasicAnimation = CABasicAnimation(keyPath:TransformAnimation.rotation.rawValue)
+        
+        rotation.duration = 0.5
+//        rotation.isRemovedOnCompletion = false
+//        rotation.repeatCount = HUGE
+//        rotation.fillMode = kCAFillModeForwards
+        rotation.fromValue = 0.0
+        rotation.toValue =
+            CGFloat.pi * 2
+//        rotation.duration = 0.5
+        rotation.repeatCount = 50000
+//        rotation.isCumulative = true
+//        rotation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+//        rotation.autoreverses = true
+//        rotation.repeatCount = 5
+        rotation.fillMode = kCAFillModeForwards
+        
+        return rotation
+    }
+    
 }

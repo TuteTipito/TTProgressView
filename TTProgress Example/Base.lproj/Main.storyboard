@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,11 +44,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J41-x2-Ekg" customClass="TTCircularProgressViewWithLabel" customModule="TTProgress_Example" customModuleProvider="target">
-                                <rect key="frame" x="85" y="135" width="150" height="150"/>
+                                <rect key="frame" x="100" y="135" width="120" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="A5A-xs-eVA"/>
-                                    <constraint firstAttribute="width" constant="150" id="b4x-br-0Wu"/>
+                                    <constraint firstAttribute="height" constant="120" id="A5A-xs-eVA"/>
+                                    <constraint firstAttribute="width" constant="120" id="b4x-br-0Wu"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
@@ -202,6 +202,28 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="qLf-n5-DhX"/>
                                 </items>
                             </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAs-gJ-XQH" customClass="TTCircularProgressView" customModule="TTProgress_Example" customModuleProvider="target">
+                                <rect key="frame" x="120" y="295" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0bs-3T-EcX"/>
+                                    <constraint firstAttribute="height" constant="80" id="ZYJ-B5-ZBo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="pathColor">
+                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.94999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundPathColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -214,8 +236,10 @@
                             <constraint firstItem="MLi-ZJ-HMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SLm-Cp-Feo"/>
                             <constraint firstItem="7tK-kY-aHF" firstAttribute="top" secondItem="bjp-2S-ajZ" secondAttribute="bottom" id="T2B-cY-LJ5"/>
                             <constraint firstItem="J41-x2-Ekg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TWZ-ta-wpo"/>
+                            <constraint firstItem="dAs-gJ-XQH" firstAttribute="top" secondItem="J41-x2-Ekg" secondAttribute="bottom" constant="40" id="cNM-Cr-NVJ"/>
                             <constraint firstAttribute="trailing" secondItem="bjp-2S-ajZ" secondAttribute="trailing" id="ca0-We-BrA"/>
                             <constraint firstItem="J41-x2-Ekg" firstAttribute="top" secondItem="MLi-ZJ-HMd" secondAttribute="bottom" constant="40" id="lSn-Jc-mBg"/>
+                            <constraint firstItem="dAs-gJ-XQH" firstAttribute="centerX" secondItem="J41-x2-Ekg" secondAttribute="centerX" id="oRu-qQ-wzg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7tK-kY-aHF" secondAttribute="bottom" id="ufq-fr-WD5"/>
                             <constraint firstAttribute="trailing" secondItem="7tK-kY-aHF" secondAttribute="trailing" id="ugy-kp-4E4"/>
                         </constraints>
@@ -223,6 +247,7 @@
                     <connections>
                         <outlet property="circularProgress" destination="J41-x2-Ekg" id="9O8-3r-Pyo"/>
                         <outlet property="linearProgress" destination="MLi-ZJ-HMd" id="blP-0z-LuK"/>
+                        <outlet property="loadingProgress" destination="dAs-gJ-XQH" id="DCK-ae-jDC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
