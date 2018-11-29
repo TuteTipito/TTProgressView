@@ -151,7 +151,7 @@ extension TTProgressView {
         animation.fromValue = fromValue
         animation.toValue = toValue
         animation.duration = durationValue
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         
         return animation
     }
@@ -173,7 +173,7 @@ extension TTProgressView {
 //        rotation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
 //        rotation.autoreverses = true
 //        rotation.repeatCount = 5
-        rotation.fillMode = kCAFillModeForwards
+        rotation.fillMode = CAMediaTimingFillMode.forwards
         
         return rotation
     }
